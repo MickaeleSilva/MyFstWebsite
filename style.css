@@ -1,0 +1,7 @@
+fieldset {
+    width: 400px;         /* Diminui o comprimento (largura) */
+    padding: 10px;
+    border: 1px solid #999;
+    border-radius: 8px;
+    background-color: #dfb8dc;
+  }
