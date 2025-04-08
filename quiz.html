@@ -5,11 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Um quiz interativo para testar os conhecimentos de um programador.">
     <meta name="author" content="Mickaele Abildi">
+    <link rel="stylesheet" href="quiz.css">
     <title>Quiz Para Programadores</title>
+    
 </head>
 <body>
-    <header>
-        <h1>Quiz Interativo para Programadores</h1>
+    <header> <!--Estilização em linha-->
+        <div>
+            <h1>Quiz Interativo Para Programadores</h1>
+        </div>
         <p>Teste seus conhecimentos em programação e veja qual pontuação você consegue alcançar!</p>
     </header>
 
@@ -79,8 +83,6 @@
                 <input type="checkbox" id="p5d"
                 name="pergunta5" value="CSS">
                 <label for="p5d">CSS</label>
-                
-                 
             </form>
 
         </section>
@@ -108,7 +110,7 @@
         <section>
             <h2>Pergunta 8: Qual linguagem de programação é representada pelo logotipo abaixo? </h2>
             <figure>
-                <img src="./assets/imagem1.svg" alt="Logotipo de uma linguagem de programação" width="300px"><br>
+                <img src="./assets/imagem1.svg" alt="Logotipo de uma linguagem de programação" width="270px" ><br>
                 <figcaption> Figure 1: logotipo de uma linguagem de programação</figcaption>
             </figure>
            <input type="text" id="p8" name="pergunta8"
@@ -172,14 +174,14 @@
             <h2>Nos dê o seu feedback</h2>
                 <form>
                     <fieldset> <!--diminuir no css-->
-                        <legend>Informações de Contato</legend>
-                        <label for="name">Nome: </label>
-                        <input type="text" id="name" name="name"> <br>
-                        <label for="email">E-mail:</label>
-                        <input type="email" id="email" name="email"><br>
+                        <legend>Informações de Contato</legend> <br>
+                        <label for="name">Nome: </label> <br>
+                        <input type="text" id="name" name="name"> <br><br>
+                        <label for="email">E-mail:</label> <br>
+                        <input type="email" id="email" name="email"><br><br>
                         <label for="comentarios">Comentários:</label><br>
                         <textarea id="comentarios" name="comentarios"
-                            rows="6" cols="50" placeholder="Digite seus comentários aqui"></textarea><br>
+                            rows="6" cols="50" placeholder="Digite aqui uma dúvida, sugestão ou reclamação.."></textarea><br><br>
                             <button onclick="alert('FEEDBACK ENVIADO')">Envie o feedback</button>
                     </fieldset>
                 </form>
@@ -187,9 +189,8 @@
     </main>
 
     <footer>
-        <p> Quer me conhecer? <a href="sobremim.html" target ="_blank">Clique Aqui</a></p>
-
-        <p>&copy; 2025 Mickaele Abildi | Desenvolvido para programadores | Todos os direitos reservados. </p> <!-- (&copyright neste caso)-->
+        <p class="paragrafo-footer"> Quer me conhecer? <a href="sobremim.html" target ="_blank">Clique Aqui</a></p>
+        <p class="paragrafo-footer">&copy; 2025 Mickaele Abildi | Desenvolvido para programadores | Todos os direitos reservados </p> <!-- (&copyright neste caso)-->
     </footer>
 </body>
 </html>
