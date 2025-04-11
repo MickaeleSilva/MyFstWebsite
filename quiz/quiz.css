@@ -26,6 +26,8 @@ main {
   gap: 1.5rem; /* espaçamento entre todos os itens de main */
   width: fit-content; /* tam do elemento é o tam do conteúdo */
   margin: auto;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 section {
@@ -38,9 +40,14 @@ h2 {
   color: #331f19;
 }
 
+input, select, textarea {
+  max-width: 100%;
+}
+
 input[type="radio"],
 input[type="checkbox"] {
   accent-color: #afba7b;
+  
 }
 
 input[type="text"],
@@ -92,11 +99,6 @@ tfoot td {
   font-weight: bolder;
 }
 
-/*
- * TODO: animar utilizando a seguinte referência:
- * https://dev.to/jgustavoas/how-to-fully-animate-the-details-html-element-with-only-css-no-javascript-2n88
- */
-
 details {
   background-color: #afba7b;
   border-radius: 5px;
@@ -115,6 +117,15 @@ details summary {
   user-select: none;
 }
 
+details[open] summary ~ * {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
 fieldset {
   border: 4px solid #afba7b;
   border-radius: 5px;
@@ -123,7 +134,7 @@ fieldset {
 }
 
 fieldset input {
-  margin-top:0.5rem;
+  margin-top: 0.5rem;
 }
 
 #comentarios {
@@ -138,7 +149,6 @@ legend {
   border-radius: 4px;
 }
 
-
 textarea {
   background-color: transparent;
   outline: 1.5px solid #afba7b;
@@ -149,11 +159,17 @@ textarea {
 
 button {
   background-color: #afba7b;
-  border: none;
-  padding: 0.8rem;
   color: #331f19;
+  padding: 0.6rem 1rem;
+  border: none;
   border-radius: 5px;
   cursor: pointer;
+  font-weight: bold;
+  transition: background-color 1s;
+}
+
+button:hover {
+  background-color: #8fa25d;
 }
 
 footer {

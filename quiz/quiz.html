@@ -28,16 +28,16 @@
         <section>
             <h2>Pergunta 1: Qual Linguagem é usada para estruturar páginas web?</h2>
             <form>
-                <input type="radio" value="Phyton" id="p1a"
+                <input type="radio" value="Python" id="p1a"
                 name="pergunta1">
-                <label for="p1a">Phyton</label> <br/>
+                <label for="p1a">Python</label> <br/>
                 <input type="radio" value="JavaScript" id="p1b"
                 name="pergunta1">
                 <label for="p1b">JavaScript</label> <br/>
                 <input type="radio" value="JavaScript" id="p1c"
                 name="pergunta1">
-                <label for="p1c">HTML</label> <br/>
-                <input type="radio" value="JavaScript" id="p1d"
+                <label for="p1c">HTML</label><br/>
+                <input type="radio" value="HTML" id="p1d"
                 name="pergunta1">
                 <label for="p1d">Ruby</label>
             
@@ -77,9 +77,9 @@
                 <input type="checkbox" id="p5b"
                 name="pergunta5" value="HTML">
                 <label for="p5b">HTML</label>
-                <input type="checkbox" id="p5C"
+                <input type="checkbox" id="p5c"
                 name="pergunta5" value="Java">
-                <label for="p5C">Java</label>
+                <label for="p5c">Java</label>
                 <input type="checkbox" id="p5d"
                 name="pergunta5" value="CSS">
                 <label for="p5d">CSS</label>
@@ -116,9 +116,15 @@
            <input type="text" id="p8" name="pergunta8"
            placeholder="Digite sua resposta">
         </section>
+        <!--Envio do quiz-->
+        <section>
+            <form>
+              <button type="submit">Enviar Respostas</button>
+            </form>
+          </section>
         <!--Tabela de Pontuação-->
         <section> 
-            <h2>Tabela de Pontuação</h2>
+            <h2>Tabela de avaliação de desempenho</h2>
             <table border="1">
                 <thead>
                     <tr>
@@ -175,14 +181,15 @@
                 <form>
                     <fieldset> <!--diminuir no css-->
                         <legend>Informações de Contato</legend> <br>
-                        <label class="contato" for="name">Nome: </label> <br>
+                        <label for="name">Nome: </label> <br>
                         <input type="text" id="name" name="name"> <br><br>
-                        <label class="contato" for="email">E-mail:</label> <br>
+                        <label for="email">E-mail:</label> <br>
                         <input type="email" id="email" name="email"><br><br>
-                        <label class="contato" for="comentarios">Comentários:</label><br>
+                        <label for="comentarios">Comentários:</label><br>
                         <textarea id="comentarios" name="comentarios"
                             rows="6" cols="50" placeholder="Digite aqui uma dúvida, sugestão ou reclamação.."></textarea><br><br>
-                            <button onclick="alert('FEEDBACK ENVIADO')">Envie o feedback</button>
+                            <button type="submit" onclick="alert('FEEDBACK ENVIADO')">Envie o feedback</button>
+
                     </fieldset>
                 </form>
         </section>
@@ -192,5 +199,8 @@
         <p class="paragrafo-footer"> Quer me conhecer? <a href="/aboutme/sobremim.html" target ="_blank">Clique Aqui</a></p>
         <p class="paragrafo-footer">&copy; 2025 Mickaele Abildi | Desenvolvido para programadores | Todos os direitos reservados </p> <!-- (&copyright neste caso)-->
     </footer>
+
+<script src="quiz.js"></script>
+
 </body>
 </html>
